@@ -2,7 +2,7 @@
 pm: npm
 install: npm ci
 test: npm run test
-typecheck: npx tsc --noEmit
+typecheck: npx next typegen && npx tsc --noEmit
 lint: npm run lint
 test_regex: (\.test\.|\.spec\.|__tests__/|^tests/)
 src_dirs: app
