@@ -1,0 +1,9 @@
+# Files kept byte-identical to the agent-workflow plugin templates.
+# The plugin's format-changed.sh hook runs prettier on every .md file edited
+# with the Write/Edit tools (which workflow rule 6 requires), but the templates
+# it ships are not prettier-clean -- prettier adds a blank line after every
+# heading and collapses the alignment spaces in task frontmatter comments.
+# Formatting these would make them drift from the templates on every edit.
+CLAUDE.md
+REVIEW.md
+tasks/*.md
